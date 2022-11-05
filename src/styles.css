@@ -112,3 +112,15 @@ a:hover {
   width: 40px;
   margin: 10px 0;
 }
+
+footer {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 15px;
+}
+
+footer a {
+  color: #e5b7a8;
+  text-decoration: underline #e5b7a8;
+}
