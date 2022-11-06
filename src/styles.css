@@ -58,7 +58,6 @@ button {
 .city {
   font-size: 45px;
   line-height: 1;
-  text-transform: capitalize;
 }
 .summary-detail {
   font-size: 20px;
