@@ -116,3 +116,8 @@ footer a {
   color: #e5b7a8;
   text-decoration: underline #e5b7a8;
 }
+
+footer a:hover {
+  color: #282c46;
+  text-decoration: underline #282c46;
+}
