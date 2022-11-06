@@ -23,9 +23,8 @@ function formatDate(timestamp) {
 }
 
 function showWeather(response) {
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  celsiusTemp = response.data.main.temp;
+  document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -42,6 +41,8 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function searchCity(city) {
@@ -72,26 +73,31 @@ function fetchLocation(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-searchCity("Yokohama");
-
 let currentLocation = document.querySelector("#location-button");
 currentLocation.addEventListener("click", fetchLocation);
 
-/*function displayCelsius(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#temp");
-  temp.innerHTML = 17;
-}
+let celsiusTemp = null;
 
 function displayFahrenheit(event) {
   event.preventDefault();
-  let temp = document.querySelector("#temp");
-  temp.innerHTML = 63;
+  document.querySelector("#temp").innerHTML = Math.round(
+    (celsiusTemp * 9) / 5 + 32
+  );
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 
-let celsiusTemp = document.querySelector("#celsius");
-celsiusTemp.addEventListener("click", displayCelsius);
+function displayCelsius(event) {
+  event.preventDefault();
+  document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
 
-let fahrenheitTemp = document.querySelector("#fahrenheit");
-fahrenheitTemp.addEventListener("click", displayFahrenheit);
-*/
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
+
+searchCity("Yokohama");

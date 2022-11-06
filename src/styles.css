@@ -13,25 +13,19 @@ body {
   padding: 40px 50px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  background: linear-gradient(
-    111.5deg,
-    rgb(228, 247, 255) 21.9%,
-    rgb(255, 216, 194) 92.2%
-  );
 }
 
 .form-style {
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
-  border: 1px;
+  border: 1px solid;
   border-radius: 10px;
   height: 40px;
   padding: 0 15px;
 }
 
 .form-style:focus {
-  border: 1px #282c46 solid;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   outline: none;
 }
 
@@ -73,8 +67,7 @@ button {
 }
 
 .main-icon {
-  margin-right: 10px;
-  width: 120px;
+  width: 150px;
 }
 .temp {
   font-size: 80px;
@@ -88,12 +81,11 @@ button {
 
 a {
   text-decoration: none;
-  color: #282c46;
 }
 
-a:hover {
-  text-decoration: underline;
+.unit .active {
   color: #282c46;
+  cursor: default;
 }
 
 .forecast {
