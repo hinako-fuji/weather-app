@@ -41,8 +41,6 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
 }
 
 function searchCity(city) {
@@ -75,29 +73,5 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocation = document.querySelector("#location-button");
 currentLocation.addEventListener("click", fetchLocation);
-
-let celsiusTemp = null;
-
-function displayFahrenheit(event) {
-  event.preventDefault();
-  document.querySelector("#temp").innerHTML = Math.round(
-    (celsiusTemp * 9) / 5 + 32
-  );
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function displayCelsius(event) {
-  event.preventDefault();
-  document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayCelsius);
 
 searchCity("Yokohama");

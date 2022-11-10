@@ -15,18 +15,19 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
-.form-style {
+.form-control {
   width: 100%;
-
+  font-size: 18px;
   border: 1px solid;
   border-radius: 10px;
   height: 40px;
   padding: 0 15px;
 }
 
-.form-style:focus {
+.form-control:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  outline: none;
+
+  border-color: #282c46;
 }
 
 button {
@@ -81,11 +82,6 @@ button {
 
 a {
   text-decoration: none;
-}
-
-.unit .active {
-  color: #282c46;
-  cursor: default;
 }
 
 .forecast {
