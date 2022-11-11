@@ -32,7 +32,7 @@
           <div class="search">
             <form id="search-form">
               <div class="row">
-                <div class="col-8">
+                <div class="col-9">
                   <input
                     type="search"
                     placeholder="Enter a city..."
@@ -41,19 +41,8 @@
                     id="city-input"
                   />
                 </div>
-                <div class="col-2 p-0">
-                  <button
-                    type="submit"
-                    class="search-button"
-                    id="search-button"
-                  >
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-                <div class="col-2 p-0">
-                  <button id="location-button">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </button>
+                <div class="col-3 p-0">
+                  <button type="submit" class="search-button">Search</button>
                 </div>
               </div>
             </form>
@@ -82,81 +71,7 @@
             </div>
           </div>
 
-          <div class="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="forecast-day">Fri</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/cloudy-sunny.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">20° 13°</div>
-              </div>
-
-              <div class="col-2">
-                <div class="forecast-day">Sat</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/sunny-cloudy.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">22° 12°</div>
-              </div>
-
-              <div class="col-2">
-                <div class="forecast-day">Sun</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/cloudy.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">24° 16°</div>
-              </div>
-
-              <div class="col-2">
-                <div class="forecast-day">Mon</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/cloudy-sunny.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">18° 12°</div>
-              </div>
-
-              <div class="col-2">
-                <div class="forecast-day">Tue</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/rainy.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">14° 10°</div>
-              </div>
-
-              <div class="col-2">
-                <div class="forecast-day">Wed</div>
-                <div class="forecast-icon">
-                  <img
-                    src="images/rainy.png"
-                    alt=""
-                    class="forecast-icon-img"
-                  />
-                </div>
-                <div class="forecast-temp">16° 10°</div>
-              </div>
-            </div>
-          </div>
+          <div class="forecast" id="forecast"></div>
         </div>
         <footer>
           <a href="https://github.com/hinako-fuji/weather-app" target="_blank"

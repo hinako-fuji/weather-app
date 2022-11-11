@@ -2,6 +2,7 @@ body {
   font-family: "Pangolin", cursive;
   color: #282c46;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .container {
@@ -18,32 +19,32 @@ body {
 .form-control {
   width: 100%;
   font-size: 18px;
-  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   border-radius: 10px;
   height: 40px;
   padding: 0 15px;
+  border: none;
 }
 
 .form-control:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-
-  border-color: #282c46;
+  border: 1px solid #a3babc;
 }
 
 button {
-  background: #282c46;
+  background: #78b7bb;
   color: white;
-  border: 2px #282c46 solid;
+  border: 2px #78b7bb solid;
   border-radius: 10px;
   font-size: 17px;
   height: 40px;
-  width: 93%;
+  width: 100%;
   text-align: center;
+  transition: all 200ms ease-in-out;
 }
 
-.search-button:hover {
-  transition: all 200ms ease-in-out;
-  opacity: 0.9;
+button:hover {
+  opacity: 0.8;
 }
 
 .summary {
@@ -68,7 +69,7 @@ button {
 }
 
 .main-icon {
-  width: 150px;
+  width: 170px;
 }
 .temp {
   font-size: 80px;
@@ -78,6 +79,7 @@ button {
   position: relative;
   top: -20px;
   margin-left: 5px;
+  font-size: 20px;
 }
 
 a {
@@ -85,7 +87,6 @@ a {
 }
 
 .forecast {
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -93,12 +94,13 @@ a {
   font-size: 20px;
 }
 
-.forcast-icon {
-  margin: 10px;
-}
 .forecast-icon-img {
-  width: 40px;
-  margin: 10px 0;
+  width: 60px;
+  margin: 10px auto;
+}
+
+.min-temp {
+  opacity: 70%;
 }
 
 footer {
@@ -109,11 +111,10 @@ footer {
 }
 
 footer a {
-  color: #e5b7a8;
-  text-decoration: underline #e5b7a8;
+  color: #78b7bb;
+  text-decoration: underline #78b7bb;
 }
 
 footer a:hover {
-  color: #282c46;
-  text-decoration: underline #282c46;
+  color: #78b7bb;
 }
