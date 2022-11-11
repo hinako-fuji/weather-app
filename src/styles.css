@@ -34,7 +34,7 @@ body {
 button {
   background: #78b7bb;
   color: white;
-  border: 2px #78b7bb solid;
+  border: 1px #78b7bb solid;
   border-radius: 10px;
   font-size: 17px;
   height: 40px;
@@ -69,7 +69,7 @@ button:hover {
 }
 
 .main-icon {
-  width: 170px;
+  max-width: 100%;
 }
 .temp {
   font-size: 80px;
