@@ -34,7 +34,7 @@ body {
 button {
   background: #78b7bb;
   color: white;
-  border: 1px #78b7bb solid;
+  border: none;
   border-radius: 10px;
   font-size: 17px;
   height: 40px;
@@ -95,7 +95,7 @@ a {
 }
 
 .forecast-icon-img {
-  max-width: 100%;
+  width: 50px;
   margin: 10px auto;
 }
 
