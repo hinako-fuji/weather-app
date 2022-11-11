@@ -69,7 +69,7 @@ button:hover {
 }
 
 .main-icon {
-  max-width: 100%;
+  width: 170px;
 }
 .temp {
   font-size: 80px;
@@ -95,7 +95,7 @@ a {
 }
 
 .forecast-icon-img {
-  width: 60px;
+  max-width: 100%;
   margin: 10px auto;
 }
 
