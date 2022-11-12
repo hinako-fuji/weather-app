@@ -90,10 +90,6 @@ button:hover {
   font-size: 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .forecast {
   text-align: center;
 }
@@ -120,7 +116,6 @@ footer {
 
 footer a {
   color: #282c46;
-  text-decoration: underline #282c46;
 }
 
 footer a:hover {
