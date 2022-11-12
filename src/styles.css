@@ -38,7 +38,8 @@ body {
   border: 1px solid #282c46;
 }
 
-.search .btn {
+.search .btn,
+.search .btn:active {
   background: #282c46;
   color: white;
   border: 2px #282c46 solid;
