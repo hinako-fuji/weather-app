@@ -2,7 +2,13 @@ body {
   font-family: "Pangolin", cursive;
   color: #282c46;
   font-size: 18px;
-  font-weight: 600;
+  background: linear-gradient(
+      111.5deg,
+      rgb(228, 247, 255) 21.9%,
+      rgb(255, 216, 194) 92.2%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -14,6 +20,7 @@ body {
   padding: 40px 50px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .form-control {
@@ -28,23 +35,23 @@ body {
 
 .form-control:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border: 1px solid #a3babc;
+  border: 1px solid #282c46;
 }
 
-button {
-  background: #78b7bb;
+.search .btn {
+  background: #282c46;
   color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
+  border: 2px #282c46 solid;
+  font-size: 18px;
+
   height: 40px;
-  width: 100%;
-  text-align: center;
-  transition: all 200ms ease-in-out;
+  line-height: 20px;
+  padding: 0;
+  border-radius: 10px;
 }
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .summary {
@@ -95,7 +102,7 @@ a {
 }
 
 .forecast-icon-img {
-  width: 50px;
+  width: 60px;
   margin: 10px auto;
 }
 
@@ -111,10 +118,10 @@ footer {
 }
 
 footer a {
-  color: #78b7bb;
-  text-decoration: underline #78b7bb;
+  color: #282c46;
+  text-decoration: underline #282c46;
 }
 
 footer a:hover {
-  color: #78b7bb;
+  color: #282c46;
 }

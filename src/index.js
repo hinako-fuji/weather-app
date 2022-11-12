@@ -38,11 +38,12 @@ function showForecast(response) {
   let forecastHTML = `<div class="row d-flex justify-content-center">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index === 0) return;
+    if (index < 7) {
       forecastHTML =
         forecastHTML +
         `
-              <div class="col-2">
+              <div class="col-2 p-0">
                 <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
                 <div class="forecast-icon" >
                   <img
